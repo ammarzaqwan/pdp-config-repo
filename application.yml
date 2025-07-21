@@ -7,8 +7,6 @@ spring:
   cloud:
     config:
       enabled: true
-  profiles:
-    active: default
 
 management:
   endpoints:
