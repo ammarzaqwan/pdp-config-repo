@@ -1,0 +1,20 @@
+server:
+  port: 0  # Each service runs on a random port (recommended for service discovery)
+
+spring:
+  application:
+    name: config-default
+  cloud:
+    config:
+      enabled: true
+  profiles:
+    active: default
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
